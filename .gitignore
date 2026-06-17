@@ -1,4 +1,5 @@
-*.stl
-.DS_Store
+# Ignore slicer output but keep committed reference STLs in case/stl/
 *.3mf
 *.gcode
+.DS_Store
+case/stl/*.3mf

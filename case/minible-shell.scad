@@ -78,9 +78,8 @@ module usb_port() {
 }
 
 module wheel_bore() {
-    translate([case_l, wheel_y, case_h / 2])
-        rotate([0, 90, 0])
-            cylinder(h = wall + 0.2, d = wheel_bore_d, center = true, $fn = 72);
+    translate([case_l - wall - 0.1, wheel_y - wheel_bore_d / 2, case_h / 2 - wheel_bore_d / 2])
+        cube([wall + 0.2, wheel_bore_d, wheel_bore_d]);
 }
 
 module display_window() {
@@ -95,14 +94,14 @@ module card_slot() {
 
 module mount_posts() {
     for (p = [mount_j1, mount_j2])
-        translate([p[0], p[1], 0])
-            cylinder(h = case_h, d = screw_post_d, $fn = 32);
+        translate([p[0] - screw_post_d / 2, p[1] - screw_post_d / 2, 0])
+            cube([screw_post_d, screw_post_d, case_h]);
 }
 
 module mount_holes() {
     for (p = [mount_j1, mount_j2])
-        translate([p[0], p[1], -0.1])
-            cylinder(h = case_h + 0.2, d = mount_d, $fn = 24);
+        translate([p[0] - mount_d / 2, p[1] - mount_d / 2, -0.1])
+            cube([mount_d, mount_d, case_h + 0.2]);
 }
 
 module mating_lip(top = true) {

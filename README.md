@@ -9,6 +9,7 @@ Community guides and printable parts to extend the life of a Mini BLE.
 | [battery/BOM.md](battery/BOM.md) | Replacement cell specifications and sourcing notes |
 | [battery/replacement.md](battery/replacement.md) | Step-by-step battery swap procedure |
 | [case/minible-shell.scad](case/minible-shell.scad) | Parametric service shell (OpenSCAD) |
+| [case/stl/](case/stl/) | **Print-ready STL files** (top, bottom, battery door) |
 | [case/README.md](case/README.md) | How to export STLs and assemble the shell |
 | [case/print-settings.md](case/print-settings.md) | Suggested slicer settings |
 | [docs/dimensions.md](docs/dimensions.md) | KiCad-derived mechanical reference |

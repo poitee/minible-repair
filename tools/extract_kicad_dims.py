@@ -36,7 +36,8 @@ def module_at(pcb_text: str, footprint: str) -> tuple[float, float, float] | Non
 
 
 def main() -> int:
-    pcb_path = Path(sys.argv[1] if len(sys.argv) > 1 else "minible_hw/main_board/mini_ble.kicad_pcb")
+    default = Path(__file__).resolve().parents[1].parent / "minible_hw/main_board/mini_ble.kicad_pcb"
+    pcb_path = Path(sys.argv[1]) if len(sys.argv) > 1 else default
     pcb_path = pcb_path.resolve()
     if pcb_path.suffix != ".kicad_pcb" or not pcb_path.is_file():
         print(f"Expected an existing .kicad_pcb file, got: {pcb_path}", file=sys.stderr)

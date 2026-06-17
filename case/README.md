@@ -13,10 +13,22 @@ Parametric OpenSCAD shell for servicing a Mini BLE after the factory aluminum ca
 
 ## Quick start
 
+**Pre-built STLs** are in [`case/stl/`](stl/) — ready to slice.
+
+To regenerate after editing `minible-shell.scad` or `tools/generate_stl.py`:
+
 ```bash
-brew install --cask openscad
+pip3 install -r tools/requirements.txt
 ./case/export-stl.sh
 ```
+
+Or only:
+
+```bash
+python3 tools/generate_stl.py
+```
+
+OpenSCAD is optional (see `minible-shell.scad` for parametric edits); STL export uses Python + [trimesh](https://github.com/mikedh/trimesh).
 
 This writes:
 
