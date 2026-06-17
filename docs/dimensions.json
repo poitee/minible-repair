@@ -1,0 +1,106 @@
+{
+  "source": "/Users/poitee/Dev/Moolti/minible_hw/main_board/mini_ble.kicad_pcb",
+  "pcb_mm": {
+    "length": 74.8,
+    "width": 31.2
+  },
+  "case_mm": {
+    "length": 89.0,
+    "width": 35.5,
+    "height": 12.5
+  },
+  "pcb_margin_mm": {
+    "x": 7.1,
+    "y": 2.15
+  },
+  "features": {
+    "usb": {
+      "pcb_mm": [
+        214.3,
+        92.7
+      ],
+      "case_mm": [
+        72.9,
+        5.35
+      ]
+    },
+    "wheel": {
+      "pcb_mm": [
+        219.8,
+        105.1
+      ],
+      "case_mm": [
+        78.4,
+        17.75
+      ]
+    },
+    "oled": {
+      "pcb_mm": [
+        156.8,
+        105.1
+      ],
+      "case_mm": [
+        15.4,
+        17.75
+      ]
+    },
+    "smartcard": {
+      "pcb_mm": [
+        160.4,
+        116.65
+      ],
+      "case_mm": [
+        19.0,
+        29.3
+      ]
+    },
+    "battery": {
+      "pcb_mm": [
+        148.8,
+        105.1
+      ],
+      "case_mm": [
+        7.4,
+        17.75
+      ]
+    },
+    "mount_j1": {
+      "pcb_mm": [
+        218.5,
+        116.4
+      ],
+      "case_mm": [
+        77.1,
+        29.05
+      ]
+    },
+    "j7": {
+      "pcb_mm": null,
+      "case_mm": [
+        77.1,
+        29.05
+      ]
+    },
+    "j4": {
+      "pcb_mm": null,
+      "case_mm": [
+        79.6,
+        5.25
+      ]
+    },
+    "j2": {
+      "pcb_mm": null,
+      "case_mm": [
+        9.6,
+        31.75
+      ]
+    },
+    "j1": {
+      "pcb_mm": null,
+      "case_mm": [
+        9.6,
+        3.75
+      ]
+    }
+  }
+}
